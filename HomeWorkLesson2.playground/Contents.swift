@@ -32,6 +32,6 @@ var string3 = "Name"
 var mod = -5
 print (abs(mod))
 
-var rounding = 5.6757
+var rounding = 5.7
 print (round(rounding))
-print (round( rounding * 1000) / 1000)
+print (Double( rounding * 1000) / 1000)
