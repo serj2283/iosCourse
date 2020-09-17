@@ -32,11 +32,46 @@ auto.model
 auto.carInfo()
 
     
-    var yearModel = 2005
-    if yearModel >= 2004 && yearModel <= 2008 {
-        print ("The model w211")
-    } else if yearModel >= 2008 {
-        print ("The model w212")
-}
 
-  
+import Foundation
+
+
+class PassengerCar {
+    var vehicles = "Vehicle"
+    var transmission = "tranmission"
+    var wheels = "wheels"
+    
+    var description: String {
+        return " All passenger car have \(vehicles), \(transmission) and \(wheels).\n"
+    }
+}
+let car = PassengerCar()
+print(car.description)
+
+class Bisnes: PassengerCar {
+    var lux = "Luxery"
+    
+    override var description: String {
+        return super.description + "cars are divided into classes one of which \(lux).\n"
+    }
+   
+}
+let bisnes = Bisnes()
+print(bisnes.description)
+
+class Mercedes: Bisnes {
+    let body = "Sedan"
+    let modelName = "S"
+    var interior = "leather seats"
+    var price = "Higt price"
+    
+   override var description: String {
+        return super.description + "All passenger car \(lux) class has a name \(modelName).  They have only a \(body) \(interior) and \(price).\n"
+    }
+    
+    
+    }
+
+
+let mercedes = Mercedes()
+print(mercedes.description)
