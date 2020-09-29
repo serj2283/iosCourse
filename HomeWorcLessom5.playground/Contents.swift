@@ -40,7 +40,7 @@ enum Navi {
         case Right
     }
 }
-var city = Navi.city( speedLimit: 74)
+var city = Navi.city( speedLimit: 76)
 var highway = Navi.highway( speedLimit: 120)
 var turn = Navi.turn(action: .Left)
 
