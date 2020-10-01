@@ -223,5 +223,5 @@ print(resultArray1)
 // array.filter(<#T##isIncluded: (Int) throws -> Bool##(Int) throws -> Bool#>)
 
 let filterArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-let evenArray = firstArray.filter{$0 % 2 == 0}
+let evenArray = filterArray.filter{$0 % 2 == 0}
 print(evenArray)
